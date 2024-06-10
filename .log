@@ -14,3 +14,13 @@ rails generate controller todos
 
 # you have to run below command every time as you add new classes in *.html.rb files to generate css
 rails tailwindcss:build
+
+# for rspec
+# update the Gemfile
+group :development, :test do
+  gem "rspec-rails", "~> 6.0"
+end
+
+bundle install
+rails generate rspec:install
+bundle exec rspec
