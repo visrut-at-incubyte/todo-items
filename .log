@@ -1,0 +1,1 @@
+rails new todo-items -d sqlite3
