@@ -1,1 +1,7 @@
 rails new todo-items -d sqlite3
+rspec
+rails s
+
+# add tailwind css
+bundle add tailwindcss-rails
+rails tailwindcss:install
