@@ -5,3 +5,12 @@ rails s
 # add tailwind css
 bundle add tailwindcss-rails
 rails tailwindcss:install
+
+# database config lives in config/database.yml
+
+rails generate model Todo description
+rails db:migrate
+rails generate controller todos
+
+# you have to run below command every time as you add new classes in *.html.rb files to generate css
+rails tailwindcss:build
