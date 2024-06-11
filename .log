@@ -21,6 +21,7 @@ group :development, :test do
   gem "rspec-rails", "~> 6.0"
 end
 
+# run below command after every change in Gemfile
 bundle install
 rails generate rspec:install
 bundle exec rspec
