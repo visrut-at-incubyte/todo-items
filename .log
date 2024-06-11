@@ -25,3 +25,6 @@ end
 bundle install
 rails generate rspec:install
 bundle exec rspec
+
+# to generate coverage report | see condition in file inside spec/spec_helper.rb
+RAILS_ENV="test" bundle exec rspec

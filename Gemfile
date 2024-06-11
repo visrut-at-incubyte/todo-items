@@ -62,12 +62,6 @@ group :development do
   # gem "spring"
 end
 
-group :test do
-  # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem "capybara"
-  gem "selenium-webdriver"
-end
-
 gem "tailwindcss-rails", "~> 2.6"
 
 group :development, :test do
@@ -75,9 +69,10 @@ group :development, :test do
 end
 
 group :test do
+  # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
+  gem "capybara"
+  gem "selenium-webdriver"
   gem 'rails-controller-testing'
-end
-
-group :test do
   gem 'database_cleaner-active_record'
+  gem 'simplecov', require: false, group: :test
 end
