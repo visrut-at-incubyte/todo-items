@@ -33,6 +33,12 @@ jobs:
       run: |
         bin/rails test
 
+    - name: Run system tests in headless mode
+      env:
+        HEADLESS: true
+      run: |
+        bin/rails test:system
+
     - name: Run RSpec tests
       run: |
         bundle exec rspec
