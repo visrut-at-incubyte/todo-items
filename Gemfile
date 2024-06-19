@@ -76,3 +76,5 @@ group :test do
   gem 'database_cleaner-active_record'
   gem 'simplecov', require: false, group: :test
 end
+
+gem "pg", "~> 1.5"
