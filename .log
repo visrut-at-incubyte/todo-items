@@ -28,3 +28,13 @@ bundle exec rspec
 
 # to generate coverage report | see condition in file inside spec/spec_helper.rb
 RAILS_ENV="test" bundle exec rspec
+
+
+
+
+
+----------------
+change Dockerfile
+
+docker-compose up --abort-on-container-exit app
+docker-compose down

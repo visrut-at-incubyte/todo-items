@@ -12,7 +12,7 @@ RUN bundle install
 COPY . .
 
 # Set the environment to development
-ENV RACK_ENV=development
+ENV RACK_ENV=test
 
 # Command to run RSpec tests
 CMD ["bundle", "exec", "rspec"]
